@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+    <div class="scoreboard-container">
+        <!-- HOME TEAM -->
+        <div class="team-card home-team">
+            <h2>HOME</h2>
+            <div class="score-display" id="home-score">00</div>
+            <div class="button-group">
+                <button onclick="addHomePoints(1)">+1</button>
+                <button onclick="addHomePoints(2)">+2</button>
+                <button onclick="addHomePoints(3)">+3</button>
+            </div>
+        </div>
+
+        <!-- GUEST TEAM -->
+        <div class="team-card guest-team">
+            <h2>GUEST</h2>
+            <div class="score-display" id="guest-score">00</div>
+            <div class="button-group">
+                <button onclick="addGuestPoints(1)">+1</button>
+                <button onclick="addGuestPoints(2)">+2</button>
+                <button onclick="addGuestPoints(3)">+3</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- GLOBAL CONTROLS -->
+    <div class="control-panel">
+        <button id="reset-btn" onclick="resetGame()">RESET GAME</button>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
